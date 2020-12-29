@@ -1,0 +1,10 @@
+
+.col-md-12{
+    margin: 15px;
+}
+
+.card{
+    background-color: #ccd9ff; /* Para navegadores antiguos */
+    background-image: linear-gradient(#ccd9ff, #ffffff);
+    background-repeat: no-repeat;
+}
