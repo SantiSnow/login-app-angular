@@ -17,11 +17,14 @@ export class AppComponent {
     this.dataUsers.getUsers().subscribe(data =>{
       this.users = data;
       console.log(this.users);
-    });
 
+      console.log(this.users.find(this.encontrar));
+    });
   }
 
-
+  encontrar(usuario: any){
+    return usuario.name = 'Ervin Howell';
+  }
 
   login(username: any, pass: any){
 
