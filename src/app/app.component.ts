@@ -17,18 +17,23 @@ export class AppComponent {
     this.dataUsers.getUsers().subscribe(data =>{
       this.users = data;
       console.log(this.users);
-
-      console.log(this.users.find(this.encontrar));
+      console.log("Hasta aqui la lista de usuarios");
     });
   }
 
-  encontrar(usuario: any){
-    return usuario.name = 'Ervin Howell';
+  encontrar(usuario: any, nombre: any){
+    return usuario.name = nombre;
   }
 
   login(username: any, pass: any){
 
-    console.log(username.value, pass.value);
+    //console.log(username.value, pass.value);
+
+    console.log(this.users.find(this.encontrar));
+
+    console.log(
+      this.users.find(e => e.name === username)
+    );
 
     return false;
   }
