@@ -8,3 +8,8 @@
     background-image: linear-gradient(#ccd9ff, #ffffff);
     background-repeat: no-repeat;
 }
+
+.btn{
+    margin-right: 10px;
+    margin-left: 10px;
+}
